@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
             this.generateBill.TabIndex = 0;
             this.generateBill.Text = "Generate Bill";
             this.generateBill.UseVisualStyleBackColor = false;
-            this.generateBill.Click += new System.EventHandler(this.button1_Click);
+            this.generateBill.Click += new System.EventHandler(this.GenerateBill);
             // 
             // labelBill
             // 
