@@ -19,7 +19,7 @@ Download .exe File: ![Download Here](https://github.com/Shian009/Tip-Calculator/
 ## Built with
 
 - [C#](https://www.w3schools.com/cs/) - C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework. It is used to develop web apps, desktop apps, mobile apps, games and much more.
-- [.NET Windows forms](https://docs.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2019) - Windows Forms app in Visual Studio with C#.
+- [.NET Windows forms](https://docs.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2019) - Windows Forms (WinForms) is a free and open-source graphical (GUI) class library included as a part of Microsoft . NET Framework or Mono Framework, providing a platform to write rich client applications for desktop, laptop, and tablet PCs.
 
 ## Future Scope
 
