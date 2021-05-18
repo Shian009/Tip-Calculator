@@ -10,7 +10,7 @@
 
 ## Demo
 
-Download .exe File: ![Download Here](https://github.com/Shian009/Tip-Calculator/raw/main/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe)
+Download .exe File: [Download Here](https://github.com/Shian009/Tip-Calculator/raw/main/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe)
 
 ### Landing Screen
 
