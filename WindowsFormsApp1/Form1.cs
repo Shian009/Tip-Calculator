@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class TipCalculator : Form
     {
-        public Form1()
+        public TipCalculator()
         {
             InitializeComponent();
         }
@@ -117,7 +117,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show(E.Message, title);
                 
                 // reloading the form again
-                Form1 NewForm = new Form1();
+                TipCalculator NewForm = new TipCalculator();
                 NewForm.Show();
                 this.Dispose(false);
             }
@@ -167,7 +167,7 @@ namespace WindowsFormsApp1
                     MessageBox.Show(E.Message, title);
 
                     // reloading the form again
-                    Form1 NewForm = new Form1();
+                    TipCalculator NewForm = new TipCalculator();
                     NewForm.Show();
                     this.Dispose(false);
                 }
@@ -205,7 +205,7 @@ namespace WindowsFormsApp1
                 {
                     string title = "Invalid Input!";
                     MessageBox.Show(E.Message, title);
-                    Form1 NewForm = new Form1();
+                    TipCalculator NewForm = new TipCalculator();
                     NewForm.Show();
                     this.Dispose(false);
                 }
@@ -255,7 +255,7 @@ namespace WindowsFormsApp1
                     MessageBox.Show(E.Message, title);
 
                     // reloading the form again
-                    Form1 NewForm = new Form1();
+                    TipCalculator NewForm = new TipCalculator();
                     NewForm.Show();
                     this.Dispose(false);
                 }
@@ -296,7 +296,7 @@ namespace WindowsFormsApp1
                 {
                     string title = "Invalid Input!";
                     MessageBox.Show(E.Message, title);
-                    Form1 NewForm = new Form1();
+                    TipCalculator NewForm = new TipCalculator();
                     NewForm.Show();
                     this.Dispose(false);
                 }
@@ -307,6 +307,16 @@ namespace WindowsFormsApp1
                 inputPerson.Text = s_noOfPeople.ToString();
             }
 
+        }
+        // function to be invoked when Clear Enteries button is pressed
+        private void ClearEnteries(object sender, EventArgs e)
+        {
+            // setting all the necessary items with empty string
+            inputBill.Text = "";
+            inputTip.Text = "";
+            inputPerson.Text = "";
+            outputTip.Text = "";
+            outputTotal.Text = "";
         }
     }
 }

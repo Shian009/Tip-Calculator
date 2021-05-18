@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class TipCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TipCalculator));
             this.generateBill = new System.Windows.Forms.Button();
             this.labelBill = new System.Windows.Forms.Label();
             this.labelTip = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@ namespace WindowsFormsApp1
             this.inputTip = new System.Windows.Forms.TextBox();
             this.outputTip = new System.Windows.Forms.Label();
             this.outputTotal = new System.Windows.Forms.Label();
+            this.ClearEnteriesButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // generateBill
@@ -254,13 +255,28 @@ namespace WindowsFormsApp1
             this.outputTotal.Size = new System.Drawing.Size(0, 20);
             this.outputTotal.TabIndex = 23;
             // 
-            // Form1
+            // ClearEnteriesButton
+            // 
+            this.ClearEnteriesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClearEnteriesButton.BackColor = System.Drawing.Color.LightCoral;
+            this.ClearEnteriesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearEnteriesButton.Location = new System.Drawing.Point(307, 308);
+            this.ClearEnteriesButton.Margin = new System.Windows.Forms.Padding(2, 2, 3, 2);
+            this.ClearEnteriesButton.Name = "ClearEnteriesButton";
+            this.ClearEnteriesButton.Size = new System.Drawing.Size(178, 43);
+            this.ClearEnteriesButton.TabIndex = 24;
+            this.ClearEnteriesButton.Text = "Clear Enteries";
+            this.ClearEnteriesButton.UseVisualStyleBackColor = false;
+            this.ClearEnteriesButton.Click += new System.EventHandler(this.ClearEnteries);
+            // 
+            // TipCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(519, 362);
+            this.Controls.Add(this.ClearEnteriesButton);
             this.Controls.Add(this.outputTotal);
             this.Controls.Add(this.outputTip);
             this.Controls.Add(this.inputTip);
@@ -279,9 +295,10 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.labelBill);
             this.Controls.Add(this.generateBill);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
-            this.Text = "Tip Calculator";
+            this.Name = "TipCalculator";
+            this.Text = "Tip Calculator by Shivank";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +323,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox inputTip;
         private System.Windows.Forms.Label outputTip;
         private System.Windows.Forms.Label outputTotal;
+        private System.Windows.Forms.Button ClearEnteriesButton;
     }
 }
 
