@@ -14,7 +14,7 @@ Download .exe File: ![Download Here](https://github.com/Shian009/Tip-Calculator/
 
 ### Landing Screen
 
-![](https://ibb.co/YQrsfnV)
+![](https://i.ibb.co/bmf9NwG/UI.jpg)
 
 ## Built with
 
